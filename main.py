@@ -1,3 +1,4 @@
+
 from location_generator import *
 from load_data import load_data
 from model import *
@@ -9,7 +10,6 @@ from fastapi.responses import JSONResponse
 from fastapi.templating import Jinja2Templates
 import os
 import shutil
-
 
 
 app = FastAPI(debug=True)
@@ -55,9 +55,8 @@ async def Predict_video(video: UploadFile = File(...), selected_class: str = For
     os.makedirs("static/temp", exist_ok=True)
     with open(f'static/{temp_video_path}', "wb") as f:
         shutil.copyfileobj(video.file, f)
-
-    # result = load_data()
-    # predicted_video_path = '/out/output_video.webm'
+        result = load_data()
+        predicted_video_path = '/out/output_video.mp4'
 
     result, predicted_video_path = predictVideo(temp_video_path, selected_class)
 
