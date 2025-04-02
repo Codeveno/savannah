@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Zoofari - Zoo & Safari Park Website Template</title>
+    <title>Tracksavannah</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -45,7 +45,7 @@
     <nav class="navbar navbar-expand-lg bg-white navbar-light sticky-top py-lg-0 px-4 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
         <a href="index.html" class="navbar-brand p-0">
             <img class="img-fluid me-3" src="img/icon/icon-10.png" alt="Icon">
-            <h1 class="m-0 text-primary">Zoofari</h1>
+            <h1 class="m-0 text-primary">Tracksavannah</h1>
         </a>
         <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
@@ -53,19 +53,10 @@
         <div class="collapse navbar-collapse py-4 py-lg-0" id="navbarCollapse">
             <div class="navbar-nav ms-auto">
                 <a href="/index" class="nav-item nav-link">Home</a>
-                <a href="/about" class="nav-item nav-link active">About</a>
-                <a href="/project" class="nav-item nav-link">Projects</a>
-                <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Pages</a>
-                    <div class="dropdown-menu rounded-0 rounded-bottom m-0">
-                        <a href="/animal" class="dropdown-item">Our Animals</a>
-                        <a href="/membership" class="dropdown-item">Membership</a>
-                        <a href="/visiting" class="dropdown-item">Visiting Hours</a>
-                    </div>
-                </div>
-                <a href="/contact" class="nav-item nav-link">Contact</a>
+                <a href="/static/about.html" class="nav-item nav-link active">About</a>
+                <a href="/static/logout.html" class="nav-item nav-link">Logout</a>
+
             </div>
-            <a href="" class="btn btn-primary">Donate</a>
         </div>
     </nav>
     <!-- Navbar End -->
@@ -80,125 +71,59 @@
                     <li class="breadcrumb-item"><a class="text-white" href="#">Home</a></li>
                     <li class="breadcrumb-item"><a class="text-white" href="#">Pages</a></li>
                     <li class="breadcrumb-item text-primary active" aria-current="page">About Us</li>
-                </ol>
+                    <a href="/project" class="nav-item nav-link">Project</a>
+
+                  </ol>
             </nav>
         </div>
     </div>
     <!-- Page Header End -->
 
 
-    <!-- About Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <p><span class="text-primary me-2">#</span>Welcome To Zoofari</p>
-                    <h1 class="display-5 mb-4">Why You Should Visit <span class="text-primary">Zoofari</span> Park!</h1>
-                    <p class="mb-4">Stet no et lorem dolor et diam, amet duo ut dolore vero eos. No stet est diam rebum amet diam ipsum. Clita clita labore, dolor duo nonumy clita sit at, sed sit sanctus dolor eos.</p>
-                    <h5 class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Free Car Parking</h5>
-                    <h5 class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Natural Environment</h5>
-                    <h5 class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>Professional Guide & Security</h5>
-                    <h5 class="mb-3"><i class="far fa-check-circle text-primary me-3"></i>World Best Animals</h5>
-                    <a class="btn btn-primary py-3 px-5 mt-3" href="">Read More</a>
+<!-- About Start -->
+<div class="container-xxl py-5">
+    <div class="container">
+        <!-- New Tracksavannah System Section -->
+        <div class="row g-5 mb-5 wow fadeInUp" data-wow-delay="0.1s">
+            <div class="col-12 text-center">
+                <p><span class="text-primary me-2">#</span>Our Innovation</p>
+                <h1 class="display-5 mb-4">The <span class="text-primary">Tracksavannah</span> Wildlife Monitoring System</h1>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.2s">
+                <div class="img-border">
+                    <img class="img-fluid" src="./wildlife-tech.jpg" alt="Wildlife Monitoring Technology">
                 </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="img-border">
-                        <img class="img-fluid" src="img/about.jpg" alt="">
-                    </div>
+            </div>
+            <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.3s">
+                <h3 class="mb-4">Revolutionizing Wildlife Conservation Through AI</h3>
+                <p class="mb-4">Tracksavannah is an advanced computer vision system designed to monitor wildlife populations and detect anomalies in their behavior patterns. Our platform combines cutting-edge YOLO (You Only Look Once) object detection with sophisticated analytics to provide real-time insights into animal movements and behaviors.</p>
+                
+                <h5 class="mb-3"><i class="fas fa-brain text-primary me-3"></i>AI-Powered Detection</h5>
+                <p class="mb-4">Utilizing deep learning algorithms to accurately identify and classify various wildlife species with over 90% accuracy, even in challenging savannah environments.</p>
+                
+                <h5 class="mb-3"><i class="fas fa-exclamation-triangle text-primary me-3"></i>Anomaly Detection</h5>
+                <p class="mb-4">Our system automatically flags unusual animal behaviors, unexpected movements, or potential threats, enabling rapid response from conservation teams.</p>
+                
+                <h5 class="mb-3"><i class="fas fa-map-marked-alt text-primary me-3"></i>Geospatial Tracking</h5>
+                <p class="mb-4">Integrated mapping technology visualizes animal movements and identifies critical habitat areas needing protection.</p>
+            </div>
+        </div>
+<!-- About End -->
+
+<!-- Footer Start -->
+<div class="container-fluid footer bg-dark-grey text-light footer pt-3 pb-2 wow fadeIn" data-wow-delay="0.1s">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 text-center">
+                <p class="mb-2 small">Developed under supervision of Prof. MD Trizah, SIST, Kisii University</p>
+                <div class="copyright">
+                    <p class="mb-0 small">&copy; <span id="current-year"></span> Tracksavannah. All rights reserved.</p>
                 </div>
             </div>
         </div>
     </div>
-    <!-- About End -->
-
-
-    <!-- Facts Start -->
-    <div class="container-xxl bg-primary facts my-5 py-5 wow fadeInUp" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-4">
-                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.1s">
-                    <i class="fa fa-paw fa-3x text-primary mb-3"></i>
-                    <h1 class="text-white mb-2" data-toggle="counter-up">12345</h1>
-                    <p class="text-white mb-0">Total Animal</p>
-                </div>
-                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.3s">
-                    <i class="fa fa-users fa-3x text-primary mb-3"></i>
-                    <h1 class="text-white mb-2" data-toggle="counter-up">12345</h1>
-                    <p class="text-white mb-0">Daily Vigitors</p>
-                </div>
-                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.5s">
-                    <i class="fa fa-certificate fa-3x text-primary mb-3"></i>
-                    <h1 class="text-white mb-2" data-toggle="counter-up">12345</h1>
-                    <p class="text-white mb-0">Total Membership</p>
-                </div>
-                <div class="col-md-6 col-lg-3 text-center wow fadeIn" data-wow-delay="0.7s">
-                    <i class="fa fa-shield-alt fa-3x text-primary mb-3"></i>
-                    <h1 class="text-white mb-2" data-toggle="counter-up">12345</h1>
-                    <p class="text-white mb-0">Save Wild Life</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Facts End -->
-
-
-    <!-- Testimonial Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <h1 class="display-5 text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">Our Clients Say!</h1>
-            <div class="owl-carousel testimonial-carousel wow fadeInUp" data-wow-delay="0.1s">
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4" src="img/testimonial-1.jpg" style="width: 100px; height: 100px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
-                        <h5 class="mb-1">Patient Name</h5>
-                        <span class="fst-italic">Profession</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4" src="img/testimonial-2.jpg" style="width: 100px; height: 100px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
-                        <h5 class="mb-1">Patient Name</h5>
-                        <span class="fst-italic">Profession</span>
-                    </div>
-                </div>
-                <div class="testimonial-item text-center">
-                    <img class="img-fluid rounded-circle border border-2 p-2 mx-auto mb-4" src="img/testimonial-3.jpg" style="width: 100px; height: 100px;">
-                    <div class="testimonial-text rounded text-center p-4">
-                        <p>Clita clita tempor justo dolor ipsum amet kasd amet duo justo duo duo labore sed sed. Magna ut diam sit et amet stet eos sed clita erat magna elitr erat sit sit erat at rebum justo sea clita.</p>
-                        <h5 class="mb-1">Patient Name</h5>
-                        <span class="fst-italic">Profession</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Testimonial End -->
-        
-
-      <!-- Footer Start -->
-      <div class="container-fluid footer bg-dark text-light footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
-        <div class="container py-5">
-            <div class="row g-5">
-                <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Address</h5>
-                    <p class="mb-2"><i class="fa fa-map-marker-alt me-3"></i>Kisii-university, kenya</p>
-                    <p class="mb-2"><i class="fa fa-envelope me-3"></i>tracksavannah@proton.me</p>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="copyright">
-                <div class="row">
-                    <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                        &copy; <a class="border-bottom" href="#">tracksavannah</a>, All Right Reserved.
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Footer End -->
+</div>
+<!-- Footer End -->
 
 
     <!-- Back to Top -->

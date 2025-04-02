@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Logged Out - Tracksavannah</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .auth-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+        .auth-card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .auth-card h2 {
+            margin: 0 0 10px;
+            color: #333;
+        }
+        .auth-card p {
+            margin: 0 0 20px;
+            color: #666;
+        }
+        .auth-footer .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            color: #fff;
+            background-color: #198f2d;
+            text-decoration: none;
+            border-radius: 4px;
+        }
+        .auth-footer .btn:hover {
+            background-color: #14be6f;
+        }
+    </style>
+</head>
+<body>
+    <div class="auth-container">
+        <div class="auth-card">
+            <h2>You have been logged out</h2>
+            <p>Thank you for using Tracksavannah.</p>
+            <div class="auth-footer">
+                <a href="/login" class="btn btn-primary">Login Again</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

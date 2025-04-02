@@ -462,31 +462,32 @@ table,thead,tr,tbody,th,td {
     -webkit-text-stroke: 2px var(--primary);
 }
 
-
-
-
-
-
-
-
-
-
-/*** Footer ***/
+/* Footer Styles */
 .footer {
-    background: grey; 
-    color: #FFFFFF; 
+
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: #2d3033;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    font-family: 'Quicksand', sans-serif;
 }
 
-.footer .copyright {
-    padding: 25px 0;
-    font-size: 15px;
-    border-top: 1px solid rgba(256, 256, 256, .1);
+
+
+.footer p {
+    color: #e0e0e0;
+    margin-bottom: 0.25rem;
+    line-height: 1.4;
 }
 
-.footer .copyright a {
-    color: var(--light);
+.footer .small {
+    font-size: 0.85rem;
+    opacity: 0.8;
 }
 
-.footer .copyright a:hover {
-    color: var(--primary);
+.footer .copyright p {
+    color: #f0f0f0;
+    font-size: 0.8rem;
+    letter-spacing: 0.5px;
 }

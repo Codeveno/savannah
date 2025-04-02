@@ -62,6 +62,7 @@ window.addEventListener('DOMContentLoaded', () => {
             }
         });
     }
+    document.getElementById('current-year').textContent = new Date().getFullYear();
 
     uploadForm.addEventListener('submit', async (event) => {
         event.preventDefault();

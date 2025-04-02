@@ -1,37 +1,11 @@
 import torch
 import cv2
 import pathlib
-import os
-
-# Cross-platform path handling
-def load_model(model_path, device="cpu"):
-    """Helper function to load YOLOv5 model with platform-independent paths"""
-    # Convert to absolute path and ensure it exists
-    abs_path = os.path.abspath(model_path)
-    if not os.path.exists(abs_path):
-        raise FileNotFoundError(f"Model weights not found at: {abs_path}")
-    
-    # Load model
-    model = torch.hub.load('yolov5', 
-                          'custom', 
-                          path=abs_path, 
-                          source='local',
-                          force_reload=True,
-                          trust_repo=True,
-                          device=device)
-    return model
-
-# Load models
-try:
-    day_model = load_model('weights/day-final.pt', device="cpu")
-    thermal_model = load_model('weights/night-final-aug.pt', device="cpu")
-except Exception as e:
-    print(f"Error loading models: {e}")
-    raise
-
-# Restore original pathlib if needed (not recommended to modify it in the first place)
-# Removed undefined variable 'temp' to avoid errors
-
+temp = pathlib.PosixPath
+pathlib.PosixPath = pathlib.WindowsPath
+# Load the YOLOv8 model
+day_model = torch.hub.load('yolov5', 'custom', r'weights/day-final.pt', source='local', force_reload=True, trust_repo=True,device="cpu")
+thermal_model = torch.hub.load('yolov5',"custom", path=r'weights/night-final-aug.pt', source='local', force_reload=True,device='cpu')
 
 day_class_to_animal = {
     0: 'Person',
@@ -203,4 +177,3 @@ def predictVideo(temp_video_path, video_class):
     out.release()
     print(result)
     return result, output_path
-
